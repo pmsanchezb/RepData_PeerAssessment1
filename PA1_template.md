@@ -143,7 +143,7 @@ Histogram of new dataset appears to be normally distributed
 
 
 ```r
-activity_data$week <- ifelse(weekdays(activity_data$date)=="domingo" | weekdays(activity_data$date)=="sábado","weekend","weekday")
+activity_data$week <- ifelse(weekdays(activity_data$date)=="domingo" | weekdays(activity_data$date)=="s?bado","weekend","weekday")
 ```
 
 ### Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
